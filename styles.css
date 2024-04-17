@@ -1,0 +1,109 @@
+:root {
+    --primary: #093975;
+    --bitcoin-orange: #F7931A;
+    --success: #00800052;
+    --info: #f7931a7a;
+    --error: rgba(215, 3, 3, 0.87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login--section {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.login--container {
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    height: auto;
+    min-height: 200px;
+    min-width: 400px;
+    padding: 12px;
+
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+.login--container label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 50%;
+}
+
+.login--container input {
+    width: 200px;
+    height: 30px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid var(--primary);
+}
+
+.input--container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.error-msg {
+    color: var(--error);
+}
+
+.success-msg {
+    color: var(--success);
+}
+
+.info-msg {
+    color: var(--info);
+}
+
+.show {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+.button--login {
+
+    font-size: 1.4rem;
+
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+
+    color: aliceblue;
+    background-color: var(--bitcoin-orange);
+    opacity: 1;
+    transition: opacity 250ms ease-in;
+}
+
+.button--login:hover {
+    opacity: 0.65;
+}
